@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/13/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/06/14/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h1 id="域名系统"><a href="#域名系统" class="headerlink" title="域名系统"></a>域名系统</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>DNS是一个简单的请求-响应协议，是将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网。DNS使用TCP和UDP协议的53端口</p>
+<h2 id="2-术语"><a href="#2-术语" class="headerlink" title="2.术语"></a>2.术语</h2><h3 id="mDNS"><a href="#mDNS" class="headerlink" title="mDNS"></a>mDNS</h3><p>mDNS(multicast DNS)是，多播DNS,使用5353端口，组播地址为<strong>224.0.0.251</strong>或**[FF02::FB]**</p>
+<p>在一个没有常规DNS服务器的小型网络内可以使用MDNS来实现类似DNS的编程借口，包格式和操作语义，<strong>mDNS协议的报文与DNS的报文结构相同</strong>，但有些字段对于mDNS来说有新的含义</p>
+<p>启动mDNS的主机会在进入局域网后向所有主机组播消息，包含主机名，IP等信息，其他拥有相应服务的主机也会响应含有主机名和IP的信息</p>
+<p>mDNS的域名是用.local和普通域名区分开的</p>
+<h3 id="FQDN"><a href="#FQDN" class="headerlink" title="FQDN"></a>FQDN</h3><p>(FULLY-QUALIFIED DOMAIN NAME)是域名的完全形态，主要是包含零长度的根标签，例如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">www.example.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a>TLD</h3><p>top-level domain（TLD）是属于根域的一个域，如com或jp</p>
+<p>TLD一般可以分为Country Code Top-Level Domains(ccTLDs)和generic top-lecel domains(gTLDs)以及其他</p>
+<h3 id="IDN"><a href="#IDN" class="headerlink" title="IDN"></a>IDN</h3>]]></content>
+  </entry>
+</search>
